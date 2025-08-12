@@ -26,5 +26,7 @@ public class MainServlet extends HttpServlet {
         dispatcher.forward(request, response);
         
         System.out.println("으아아아아ㅇㅇㅇㅇㅇㅇㅇㅇ아");
+        
+        System.out.println("연계");
     }
 }

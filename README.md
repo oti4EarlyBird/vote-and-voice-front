@@ -1,0 +1,11 @@
+# vote-and-voice-front
+- 주제: 국회 의안 찬반 투표 커뮤니티 플랫폼
+- 기간: 08.12 ~ 08.20
+- 사용 기술 스택:
+    - jsp
+    - el
+    - jstl
+    - bootstrap
+    - jquery
+    - ajax
+    - tomcat 9.0

@@ -24,5 +24,7 @@ public class MainServlet extends HttpServlet {
         
         // 포워딩을 수행하여 클라이언트의 요청과 응답 객체를 JSP로 넘겨줍니다.
         dispatcher.forward(request, response);
+        
+        System.out.println("으아아아아ㅇㅇㅇㅇㅇㅇㅇㅇ아");
     }
 }

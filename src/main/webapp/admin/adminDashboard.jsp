@@ -10,7 +10,7 @@
 <body>
 <%@ include file="../layout/header.jsp" %>
 
-<div>
+<div class="chart-container" style="position: relative; height: 50vh; width: 50vw">
   <canvas id="myChart"></canvas>
 </div>
 

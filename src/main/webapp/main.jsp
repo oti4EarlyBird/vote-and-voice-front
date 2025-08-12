@@ -9,6 +9,6 @@
 <body>
 <%@ include file="../layout/header.jsp" %>
 <h2>메인 페이지</h2>
-<p>지현</p>
+<p>지현ㅇㅇㅇㅇ</p>
 </body>
 </html>

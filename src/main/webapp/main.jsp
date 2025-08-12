@@ -8,6 +8,6 @@
 </head>
 <body>
 <%@ include file="../layout/header.jsp" %>
-<h2>메인 페이지-푸시 테스트</h2>
+<h2>메인 페이지-푸시 재테스트</h2>
 </body>
 </html>

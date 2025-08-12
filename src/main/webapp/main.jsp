@@ -8,6 +8,10 @@
 </head>
 <body>
 <%@ include file="../layout/header.jsp" %>
-<h2>메인 페이지-푸시 재테스트</h2>
+<<<<<<< HEAD
+<h2>메인 페이지-푸시 다시 테스트</h2>
+
+<p>지현ㅇㅇㅇㅇ</p>
+
 </body>
 </html>

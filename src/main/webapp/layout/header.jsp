@@ -112,7 +112,7 @@
 <body>
 <header>
     <div class="menubar">
-        <img class="logoImg" src="../images/logo.png">
+        <img class="logoImg" src="${pageContext.request.contextPath}/images/logo.png">
         <ul class="mymenu">
             <li><a href="">공지사항</a></li>
             <li><a href="">의안</a></li>

@@ -7,9 +7,9 @@ import java.sql.DriverManager;
 public class ConnectDB {
 	public static void main(String[] args) throws Exception {
 		Class.forName("oracle.jdbc.OracleDriver");
-		String jdbcUrl = "jdbc:oracle:thin:@localhost:1521:xe";
-		String user = "";
-	    String passwd = "";
+		String jdbcUrl = "jdbc:oracle:thin:@192.168.2.63:1521:xe";
+		String user = "SCOTT";
+	    String passwd = "TIGER";
 	    
 		Connection conn = DriverManager.getConnection(jdbcUrl, user, passwd);
 		System.out.println(conn.getClass().getName());

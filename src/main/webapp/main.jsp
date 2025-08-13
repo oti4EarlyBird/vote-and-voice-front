@@ -9,9 +9,8 @@
 <body>
 <%@ include file="../layout/header.jsp" %>
 <<<<<<< HEAD
-<h2>메인 페이지-푸시 연습중</h2>
+<h2>메인 페이지</h2>
 
-<p>지현ㅇㅇㅇㅇ</p>
 
 </body>
 </html>

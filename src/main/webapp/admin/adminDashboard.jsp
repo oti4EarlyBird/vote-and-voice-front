@@ -14,29 +14,8 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- CHARTJS -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" type="text/css" href="/vote-and-voice-front/admin/adminDashboard.css">
 </head>
-<style>
-.card-body {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.card .card-body {
-    height: calc(100% - 48px);
-}
-
-/* 캔버스 내의 차트의 사이즈를 조절하기 위해 명시적으로 사이즈 조절 */
-.card-body > canvas {
-   width: 100% !important;
-   height: 100% !important;
-   max-width: 100% !important;
-   max-height: 100% !important;
-}
-</style>
 <body>
 <%@ include file="/layout/header.jsp" %>
 <div style="text-align: center;">
@@ -92,7 +71,6 @@
 	  }
 	});
 </script>
-
 <!-- HOT 법안에 대한 찬/반 투표 파이 차트 통계 -->
 <script>
 const ctxPie = document.getElementById('myPieChart');
@@ -118,6 +96,5 @@ new Chart(ctxPie, {
   }
 });
 </script>
-
 </body>
 </html>

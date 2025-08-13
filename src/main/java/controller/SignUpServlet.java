@@ -8,12 +8,14 @@ import java.util.HashMap;
 
 @WebServlet("/user/signup")
 public class SignUpServlet extends HttpServlet {
+
 	
     // 임시 계정 저장 (LoginServlet에서 공유)
     public static HashMap<String, String> users = LoginServlet.users;
     //
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         request.getRequestDispatcher("/signup.jsp").forward(request, response);
     }
 
@@ -24,18 +26,20 @@ public class SignUpServlet extends HttpServlet {
         String name = request.getParameter("name");
         String birth = request.getParameter("birth");
         String email = request.getParameter("email");
+
+        response.setContentType("text/html; charset=UTF-8");
+
+
         String userid = request.getParameter("userid");
         String password = request.getParameter("password");
         String confirm = request.getParameter("confirm");
 
         // 간단한 검증
-        if (name == null || name.isEmpty() ||
-            birth == null || birth.isEmpty() ||
-            email == null || email.isEmpty() ||
-            userid == null || userid.isEmpty() ||
-            password == null || password.isEmpty()) {
 
-            request.setAttribute("error", "모든 항목을 입력해주세요.");
+    
+        if (userid == null || userid.isEmpty() || password == null || password.isEmpty()) {
+            request.setAttribute("error", "아이디와 비밀번호를 모두 입력해주세요.");
+
             request.getRequestDispatcher("/signup.jsp").forward(request, response);
             return;
         }
@@ -55,7 +59,10 @@ public class SignUpServlet extends HttpServlet {
         // 회원가입 성공 → 임시 HashMap에 저장
         users.put(userid, password);
 
+
         // (원하면 세션이나 추가 HashMap에 이름, 생년월일, 이메일도 저장 가능)
+
+
 
         response.sendRedirect(request.getContextPath() + "/user/login");
     }

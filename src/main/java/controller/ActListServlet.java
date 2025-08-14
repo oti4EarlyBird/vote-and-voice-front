@@ -8,35 +8,44 @@ import java.util.*;
 
 @WebServlet("/user/actlist")
 public class ActListServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-    // 임시 데이터 (DB 대신)
+    private static final long serialVersionUID = 1L;
     private static List<Map<String, String>> actList = new ArrayList<>();
 
     static {
-        Map<String, String> act1 = new HashMap<>();
-        act1.put("num", "1");
-        act1.put("title", "환경 보호법 개정안");
-        act1.put("billnum", "2204732");
-        act1.put("where", "법사위원회");
-        act1.put("result", "대안반영폐기");
-        act1.put("date", "2025-07-03");
-
-        Map<String, String> act2 = new HashMap<>();
-        act2.put("num", "2");
-        act2.put("title", "교통 안전 강화안");
-        act1.put("billnum", "2206839");
-        act2.put("where", "과학기술정보방송통신위원회");
-        act2.put("result", "대안반영폐기");
-        act1.put("date", "2025-08-05");
-        
-        actList.add(act1);
-        actList.add(act2);
+        // 샘플 데이터 25개 생성 (테스트용)
+        for (int i = 1; i <= 25; i++) {
+            Map<String, String> act = new HashMap<>();
+            act.put("num", String.valueOf(i));
+            act.put("title", "의안 제목 " + i);
+            act.put("billnum", "220" + (1000 + i));
+            act.put("where", "소관위원회 " + i);
+            act.put("result", "의결 결과 " + i);
+            act.put("date", "2025-08-" + String.format("%02d", i % 30 + 1));
+            actList.add(act);
+        }
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("actList", actList);
+        int pageSize = 10; // 한 페이지당 10개
+        int page = 1;      // 기본 페이지 번호
+        String pageParam = request.getParameter("page");
+        if (pageParam != null && pageParam.matches("\\d+")) {
+            page = Integer.parseInt(pageParam);
+        }
+
+        int totalItems = actList.size();
+        int totalPages = (int) Math.ceil((double) totalItems / pageSize);
+
+        int start = (page - 1) * pageSize;
+        int end = Math.min(start + pageSize, totalItems);
+
+        List<Map<String, String>> pageList = actList.subList(start, end);
+
+        request.setAttribute("actList", pageList);
+        request.setAttribute("currentPage", page);
+        request.setAttribute("totalPages", totalPages);
+
         request.getRequestDispatcher("/actlist.jsp").forward(request, response);
     }
 }
-

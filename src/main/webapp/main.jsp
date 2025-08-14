@@ -8,7 +8,7 @@
 </head>
 <body>
 <%@ include file="../layout/header.jsp" %>
-<<<<<<< HEAD
+
 <h2>메인 페이지</h2>
 
 

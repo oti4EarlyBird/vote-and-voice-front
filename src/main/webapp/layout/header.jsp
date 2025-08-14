@@ -112,12 +112,12 @@
 <body>
 <header>
     <div class="menubar">
-        <img class="logoImg" src="./images/logo.png">
+        <img class="logoImg" src="${pageContext.request.contextPath}/images/logo.png">
         <ul class="mymenu">
             <li><a href="">공지사항</a></li>
             <li><a href="">의안</a></li>
             <li><a href="">법안 발의 통계</a></li>
-            <li><a href="${root}/review">후기</a></li>
+            <li><a href="">후기</a></li>
             <c:if test="${sessionScope.loginstatus != null}">
                 <li><a href="#contact-section">Contact us</a></li>
             </c:if>

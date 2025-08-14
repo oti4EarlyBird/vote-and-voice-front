@@ -2,33 +2,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>로그인</title>
-    <style>
-    /* 부드러운 배경 그라데이션 애니메이션 */
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>로그인</title>
+<style>
+    
 /* 로그인 카드 스타일 */
 .login-card {
     border-radius: 20px !important; /* 모서리 둥글게 */
@@ -41,8 +19,8 @@
 .login-card:hover {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25) !important;
 }
-    
-    </style>
+
+</style>
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
@@ -50,8 +28,8 @@
 
 <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div class="card shadow-sm p-4" style="width: 360px;">
-        <h3 class="card-title text-center mb-4">로그인</h3>
-
+        <h3 class="card-title text-center mb-4">회원 로그인</h3>
+		<h8 class="card-title text-center mb-4">Vote&Voice에 온것을 환영합니다.</h8>
         <% 
             String error = (String) request.getAttribute("error");
             if (error != null) {
@@ -70,15 +48,27 @@
                 <label for="password" class="form-label">비밀번호</label>
                 <input type="password" class="form-control" id="password" name="password" placeholder="비밀번호를 입력하세요" required />
             </div>
+            <!-- 부트스트랩 + 카카오 로그인 이미지 -->
+		<button type="button" class="btn btn-primary w-100 p-0" style="background-color: transparent; border: none;">
+    		<img src="https://developers.kakao.com/tool/resource/static/img/button/login/full/ko/kakao_login_large_wide.png" 
+         	alt="카카오 로그인" 
+         	style="width: 100%; height: 38px; display: block; margin: 5px auto;">
+		</button>
+
             <button type="submit" class="btn btn-primary w-100">로그인</button>
         </form>
 
         <div class="mt-3 text-center">
-            <a href="<%= request.getContextPath() %>/register.jsp">회원가입 하러 가기</a>
+            <a href="<%= request.getContextPath() %>/register.jsp" >회원가입 하러 가기</a>
         </div>
     </div>
 </div>
-
+<style>
+a {
+	text-decoration: none;
+	color: gray
+}
+</style>
 <!-- Bootstrap JS Bundle (Popper 포함) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

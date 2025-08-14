@@ -3,7 +3,8 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<jsp:include page="/layout/common/cssConf.jsp"></jsp:include>
+
 <title>로그인</title>
 <style>
     
@@ -23,9 +24,11 @@
 </style>
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
 </head>
 <body class="bg-light">
-
+<!-- header section strats -->
+    <jsp:include page="/layout/common/header.jsp"></jsp:include>
 <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div class="card shadow-sm p-4" style="width: 360px;">
         <h3 class="card-title text-center mb-4">회원 로그인</h3>
@@ -71,6 +74,12 @@ a {
 </style>
 <!-- Bootstrap JS Bundle (Popper 포함) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- footer section -->
+  <jsp:include page="/layout/common/footer.jsp"></jsp:include>
+  <!-- footer section -->
+
+
+  <jsp:include page="/layout/common/jsConf.jsp"></jsp:include>
 </body>
 </html>
 

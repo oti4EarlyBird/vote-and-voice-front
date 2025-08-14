@@ -10,8 +10,6 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Bootstrap Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-<!-- JQUERY -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- CHARTJS -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <!-- 검색 바 모양 불러오는 cdn 링크 -->
@@ -31,9 +29,20 @@
     </div>
   </div>
 </div>
-
+<div class="title-container">
+	<h2 style="font-family: sans-serif; margin-right: 60vw;
+	">
+		공지사항
+		<a href=""
+		class="btn btn-write btn-primary disabled"
+		role="button"
+    	>
+   			등록
+   		</a>
+	</h2>
+	
+</div>
 <table class="table caption-top tbl-popup" style="width: 70%">
-  <caption><h2>공지사항</h2></caption>
   <thead>
     <tr>
       <th scope="col">번호</th>

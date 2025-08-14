@@ -10,14 +10,13 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Bootstrap Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-<!-- JQUERY -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- CHARTJS -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <link rel="stylesheet" type="text/css" href="/vote-and-voice-front/admin/adminDashboard.css">
+<%@ include file="/layout/common/header.jsp" %>
+<%@ include file="/layout/common/cssConf.jsp" %>
 </head>
 <body>
-<%@ include file="/layout/header.jsp" %>
 <div style="text-align: center;">
 	<!-- bootstrap card component 활용 -->
 	<div class="card horizontal-pie-chart-container" style="display: inline-block; position: relative; height: 50vh; width: 30vw; margin-left: 2.5vw">
@@ -96,5 +95,7 @@ new Chart(ctxPie, {
   }
 });
 </script>
+<jsp:include page="/layout/common/footer.jsp"></jsp:include>
+<jsp:include page="/layout/common/jsConf.jsp"></jsp:include>
 </body>
 </html>

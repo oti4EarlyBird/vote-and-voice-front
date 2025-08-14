@@ -3,8 +3,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-
-
+	<jsp:include page="/layout/common/cssConf.jsp"></jsp:include>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>회원가입</title>
@@ -12,7 +11,8 @@
     <link href="<%= request.getContextPath() %>/css/custom.css" rel="stylesheet">
 </head>
 <body class="bg-light">
-
+<!-- header section strats -->
+    <jsp:include page="/layout/common/header.jsp"></jsp:include>
 <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
 
     <div class="card p-4 login-card" style="width: 400px;">
@@ -58,7 +58,18 @@
         </div>
     </div>
 </div>
-
+<style>
+a {
+	text-decoration: none;
+	color: gray;
+}
+</style>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- footer section -->
+  <jsp:include page="/layout/common/footer.jsp"></jsp:include>
+  <!-- footer section -->
+
+
+  <jsp:include page="/layout/common/jsConf.jsp"></jsp:include>
 </body>
 </html>

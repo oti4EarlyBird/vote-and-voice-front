@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 @WebServlet("/user/login")
 public class LoginServlet extends HttpServlet {
-
+	private static final long serialVersionUID = 1L;
     // 임시 계정 데이터 (DB 대신)
     public static HashMap<String, String> users = new HashMap<>();
     static {
@@ -44,4 +44,3 @@ public class LoginServlet extends HttpServlet {
         }
     }
 }
-

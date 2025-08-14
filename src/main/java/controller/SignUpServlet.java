@@ -8,8 +8,8 @@ import java.util.HashMap;
 
 @WebServlet("/user/signup")
 public class SignUpServlet extends HttpServlet {
+   private static final long serialVersionUID = 1L;
 
-	
     // 임시 계정 저장 (LoginServlet에서 공유)
     public static HashMap<String, String> users = LoginServlet.users;
     //
@@ -59,11 +59,7 @@ public class SignUpServlet extends HttpServlet {
         // 회원가입 성공 → 임시 HashMap에 저장
         users.put(userid, password);
 
-
         // (원하면 세션이나 추가 HashMap에 이름, 생년월일, 이메일도 저장 가능)
-
-
-
         response.sendRedirect(request.getContextPath() + "/user/login");
     }
 }

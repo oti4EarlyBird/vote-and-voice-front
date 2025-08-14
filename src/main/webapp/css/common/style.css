@@ -140,6 +140,7 @@ a:focus {
 
 .header_section {
   padding: 15px 0;
+  background-color: #222831;
 }
 
 .header_section .container-fluid {
@@ -900,7 +901,7 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-  background-color: #222831;
+  background-color: #222831;   /*푸터 배경색 변경*/
   color: #ffffff;
   padding: 75px 0 40px 0;
   text-align: center;

@@ -1,1 +1,84 @@
 @charset "UTF-8";
+
+/* actdetail.css */
+
+/* 전체 컨테이너 */
+.my-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;         /* 안쪽 여백 */
+}
+
+/* 헤더 구분선 */
+.boldhr {
+    border: 1px solid black;
+}
+
+/* 의안 내용 */
+.bill-detail {
+    margin: 20px 0;
+}
+
+/* 투표 버튼 */
+.vote-buttons {
+    text-align: center;
+    margin: 20px;
+}
+
+.vote-buttons button {
+    margin: 0 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* 댓글 섹션 */
+.comment-section textarea {
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.comment-section button {
+    padding: 5px 15px;
+    border: 1px solid #eee;
+}
+
+.comment-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    position: relative;
+}
+
+.comment-item .report-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.comment-date {
+    font-size: 0.8em;
+    color: #666;
+}
+
+/* 투표 수 표시 */
+#voteCount {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    display: none;
+}
+
+/* 줄바꿈 유지 */
+.bill-detail div {
+    white-space: pre-line;
+}
+/* 찬반 버튼 */
+.vote-buttons button.btn-outline-success:hover {
+    background-color: #28a745 !important;
+    color: white !important;
+		}
+
+.vote-buttons button.btn-outline-danger:hover {
+    background-color: #dc3545 !important;
+    color: white !important;
+		}

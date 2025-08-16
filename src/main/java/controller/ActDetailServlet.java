@@ -16,10 +16,18 @@ public class ActDetailServlet extends HttpServlet {
 
         // 가짜 의안 데이터
         Map<String, String> bill = new HashMap<>();
+        bill.put("num", String.valueOf(1));
         bill.put("title", "2025년 신규 교육 정책 제안");
+        bill.put("billnum", "2206839");
+        bill.put("where", "법사위원회");
+        bill.put("date", "2025-08-23");
         bill.put("author", "김철수");
         bill.put("type", "교육");
-        bill.put("content", "이번 정책은 전국 학생들의 학습 환경 개선을 목표로 하며, 구체적으로 교사 배치, 교재 개선, 온라인 학습 인프라 확충 등을 포함합니다.");
+        bill.put("result", "대안 반영 폐기");
+        bill.put("content", "이번 정책은 전국 학생들의 학습 환경 개선을 목표로 하며, 구체적으로 교사 배치, 교재 개선, 온라인 학습 인프라 확충 등을 포함합니다.\n"
+        		+ "또한, 지역 간 교육 격차를 해소하기 위해 농어촌 및 도서 지역 학교에 대한 지원을 강화하고,\n"
+        		+ "학습 취약 계층을 위한 맞춤형 교육 프로그램을 확대할 예정입니다.\n아울러, 최신 ICT 기술을 활용한 스마트 교실을 보급하고, "
+        		+ "학생들의 자기주도 학습 능력을 키울 수 있는 온라인 플랫폼을 구축하여\n지속 가능한 교육 환경을 마련하고자 합니다.");
 
         // 가짜 댓글 데이터
         List<Map<String, String>> comments = new ArrayList<>();

@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet {
 
             HttpSession session = request.getSession();
             session.setAttribute("userid", userid);
-            response.sendRedirect("/main.jsp");
+            response.sendRedirect(request.getContextPath() + "/main.jsp");
 
         } else {
             // 로그인 실패 → 에러 메시지 전달

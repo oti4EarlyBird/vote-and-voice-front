@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    height: 60px;
+    border-radius: 30px;
+    padding-right: 45px;
+    padding-left: 15px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.tbl-popup {
+	color: #f5f5f5;
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 1vh;
+}
+
+.container {
+	margin-top: 4vh;	
+}
+
+.title-container {
+	margin-left: 15vw;
+}

@@ -92,3 +92,9 @@
     font-size: 0.8em;
     color: #666;
 }
+/* 목록 */
+.btn btn-secondary {
+	position: absolute;
+    right: 10px;
+    top: 10px;
+}

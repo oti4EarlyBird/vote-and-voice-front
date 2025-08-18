@@ -74,6 +74,12 @@
                     <%
                     }
                     %>
+                    <div style="text-align: right; margin-top: 20px;">
+    					<button type="button" class="btn btn-secondary"
+            			onclick="location.href='<%=request.getContextPath()%>/actlist.jsp'">
+        				목록
+    					</button>
+					</div>
                 </div>
             </div>
         </div>

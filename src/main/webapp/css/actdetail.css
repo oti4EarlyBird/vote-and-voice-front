@@ -9,13 +9,19 @@
     box-sizing: border-box;
     text-align: left;  /* 내부 콘텐츠는 왼쪽 정렬 */
 }
-
+.boldhr {
+    border: 0;
+    height: 1px;              /* 굵기 */
+    background-color: #333;   /* 색상 */
+    margin: 10px 0 20px 0;    /* 위아래 여백 */
+    border-radius: 2px;       /* 살짝 둥글게 */
+}
 /* 의안 상세 */
 .bill-detail {
-    background-color: #f9f9f9;
+    background-color: white;
     padding: 15px;
     border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid white;
     margin-bottom: 20px;
 }
 

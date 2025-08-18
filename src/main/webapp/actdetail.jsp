@@ -33,6 +33,7 @@
                 <hr>
                 <p>본회의 의결 결과 &nbsp;&nbsp;<%=bill.get("result")%></p>
                 <hr class="boldhr">
+                <img src="<%=request.getContextPath()%>/images/test.png" width="300px" height="300px"><br><br>
                 <div style="white-space: pre-line;"><%=bill.get("content")%></div><br>
             </div>
 
@@ -53,7 +54,7 @@
             <!-- 댓글 -->
             <div class="comment-section">
                 <h3>댓글</h3>
-                <textarea id="commentInput" placeholder="댓글을 작성하세요."></textarea>
+                <textarea id="commentInput" placeholder="당신의 의견을 알려주세요."></textarea>
                 <div style="text-align: right; font-size: 0.9em; color: #666;">
                     <span id="charCount">0/1000</span>
                 </div>
@@ -156,7 +157,7 @@
             const hh = String(now.getHours()).padStart(2,'0'); 
             const min = String(now.getMinutes()).padStart(2,'0'); 
 
-            commentItem.innerHTML = '<p><strong>나</strong>: '+content+'</p>' +
+            commentItem.innerHTML = '<p><strong>나</strong></p>'+'<p>'+content+'</p>' +
                                     '<p class="comment-date">'+yyyy+'-'+mm+'-'+dd+' '+hh+':'+min+'</p>'; 
             commentList.appendChild(commentItem); 
             commentInput.value=''; 

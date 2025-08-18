@@ -6,14 +6,17 @@ import javax.servlet.http.*;
 import java.io.IOException;
 import java.util.*;
 
-@WebServlet("/user/actdetail")
+@WebServlet("/user/actdetail/*")
 public class ActDetailServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+    	//url에서 actnum 추출
+    	String pathInfo = request.getPathInfo();
+    	int actnum = Integer.parseInt(pathInfo.substring(1));
+    	
         // 가짜 의안 데이터
         Map<String, String> bill = new HashMap<>();
         bill.put("num", String.valueOf(1));
@@ -28,7 +31,7 @@ public class ActDetailServlet extends HttpServlet {
         		+ "또한, 지역 간 교육 격차를 해소하기 위해 농어촌 및 도서 지역 학교에 대한 지원을 강화하고,\n"
         		+ "학습 취약 계층을 위한 맞춤형 교육 프로그램을 확대할 예정입니다.\n아울러, 최신 ICT 기술을 활용한 스마트 교실을 보급하고, "
         		+ "학생들의 자기주도 학습 능력을 키울 수 있는 온라인 플랫폼을 구축하여\n지속 가능한 교육 환경을 마련하고자 합니다.");
-
+        
         // 가짜 댓글 데이터
         List<Map<String, String>> comments = new ArrayList<>();
         Map<String, String> comment1 = new HashMap<>();
@@ -42,10 +45,8 @@ public class ActDetailServlet extends HttpServlet {
         comment2.put("content", "효과가 있을지 조금 의문입니다.");
         comment2.put("createdAt", "2025-08-13 15:05");
         comments.add(comment2);
-
         request.setAttribute("bill", bill);
         request.setAttribute("comments", comments);
-
         request.getRequestDispatcher("/actdetail.jsp").forward(request, response);
     }
 }

@@ -11,6 +11,7 @@
   <jsp:include page="/layout/common/cssConf.jsp"></jsp:include>
 </head>
 
+
 <body>
 
 
@@ -102,7 +103,7 @@
     </section>
     <!-- end slider section -->
   
-  	  
+  	   
 	  <!-- start : 최신 의안 카드형식으로 보여줄 부분 -->
 	
 	  <section class="food_section layout_padding-bottom">
@@ -892,9 +893,7 @@
   <jsp:include page="/layout/common/footer.jsp"></jsp:include>
   <!-- footer section -->
 
-	
-	
-	
+
   <jsp:include page="/layout/common/jsConf.jsp"></jsp:include>
 </body>
 

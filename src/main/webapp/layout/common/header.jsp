@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<!-- 
     <div class="bg-box">
-      <!-- <img src="../images/logo.png" alt="">  -->
+      <img src="../images/logo.png" alt="">  
     </div>
+ -->
     <!-- header section strats -->
     <header class="header_section">
       <div class="container">

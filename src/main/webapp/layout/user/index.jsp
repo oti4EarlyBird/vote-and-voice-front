@@ -20,9 +20,7 @@
     
     
     
-  <!-- 컨텐츠 부분 -->  
-  <div class="hero_area" style="background-color: pink;">
-  
+
   <!-- slider section -->
     <section class="slider_section ">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
@@ -882,7 +880,6 @@
 	  <!-- start : 관리자에게 하고 싶은 말 (QA&A) -->
   
   
-  </div>
 
  
  

@@ -1,18 +1,13 @@
 @charset "UTF-8";
 
-/* wrapper: my-container만 중앙정렬 */
-.wrapper {
-    display: flex;
-    justify-content: center; /* 가로 중앙 */
-    width: 100%;
-}
-
 /* 전체 컨테이너 */
 .my-container {
-    max-width: 800px;
-    width: 100%; 
+    max-width: 800px;  /* 중앙 고정 폭 */
+    width: 90%;        /* 반응형 여백 */
+    margin: 0 auto;    /* 가운데 정렬 */
     padding: 20px;
     box-sizing: border-box;
+    text-align: left;  /* 내부 콘텐츠는 왼쪽 정렬 */
 }
 
 /* 의안 상세 */
@@ -36,6 +31,8 @@
 .vote-buttons {
     text-align: center;
     margin: 20px 0;
+    position: relative;
+    z-index: 10px;
 }
 
 /* 차트 */
@@ -67,14 +64,16 @@
 }
 
 .comment-section button {
-    display: block;
-    margin: 0 auto 20px auto;
+    display: inline-block;
+    margin: 5px 0;
+    text-align: left;
 }
 
 .comment-item {
     border-bottom: 1px solid #eee;
     padding: 10px 0;
     position: relative;
+    text-align: left;
 }
 
 .comment-item .report-btn {

@@ -4,7 +4,7 @@
 <html>
 <head>
     <jsp:include page="/layout/common/cssConf.jsp"></jsp:include>
-    <link rel="stylesheet" href="../css/actdetail.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/actdetail.css">
     <meta charset="UTF-8">
     <title>의안 상세</title>
 </head>
@@ -12,8 +12,6 @@
     <%-- 헤더 --%>
     <jsp:include page="/layout/common/header.jsp"></jsp:include>
 
-    <%-- 중앙정렬 wrapper --%>
-    <div class="wrapper">
         <div class="my-container">
             <%-- 서블릿에서 보낸 데이터 --%>
             <%
@@ -35,7 +33,7 @@
                 <hr>
                 <p>본회의 의결 결과 &nbsp;&nbsp;<%=bill.get("result")%></p>
                 <hr class="boldhr">
-                <div style="white-space: pre-line;"><%=bill.get("content")%></div>
+                <div style="white-space: pre-line;"><%=bill.get("content")%></div><br>
             </div>
 
             <!-- 찬반 버튼 -->
@@ -78,7 +76,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
     <%-- JS --%>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -89,10 +86,9 @@
         let disagreeCount = 0; 
         let hasVoted = false; 
 
-        const ctx = document.getElementById('voteChart')?.getContext('2d'); 
-        const voteCountDiv = document.getElementById('voteCount'); 
-
-        const voteChart = new Chart(ctx, { 
+        const canvas = document.getElementById('voteChart');
+            const ctx = canvas.getContext('2d');
+            const voteChart = new Chart(ctx, { 
             type: 'doughnut', 
             data: { 
                 labels: ['찬성','반대'], 

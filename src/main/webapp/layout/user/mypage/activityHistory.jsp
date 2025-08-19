@@ -1,14 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <jsp:include page="/layout/common/cssConf.jsp"></jsp:include>
-</head>
 
 
 <style>
@@ -30,23 +23,17 @@
     border-color: #000;
   }
 </style>
-</head>
 
-
-<body>
-	
-    <!-- header section strats -->
-    <jsp:include page="/layout/common/header.jsp"></jsp:include>
-    
-    
-    <div class="card p-3 mb-4">
+<!--  -->
+  
+    <div class="card p-4 mb-4">
     	<!--  <h5 class="card-title">월별 투표 실적</h5> -->
-		<canvas id="myChart"  height="600"> </canvas>
+		<canvas id="myChart"  style="height: 600px; width: 100%;"> </canvas>
     </div>
       
-    <div class="card p-3">
+    <div class="card p-4">
     	<h3>활동 이력</h3>
-    	<table class="table table-striped]">
+    	<table class="table table-striped">
     		<tr>
     			<th>의안 번호</th>
     			<th>제목</th>
@@ -92,7 +79,7 @@
 
 
 
-
+<!-- Chart.js 관련 -->
 
 	<script type="text/javascript">
 	const ctx = document.getElementById('myChart').getContext('2d');
@@ -121,7 +108,8 @@
 	        }]
 	    },
 	    options: {
-	        responsive: true,
+	        responsive: true,  //반응형
+	        maintainAspectRatio: false,  // 비율 고정 해제
 	        plugins: {
 	          legend: {
 	            display: false
@@ -143,13 +131,3 @@
 	    });
 	  </script>
 
-	 
-
-  <!-- footer section -->
-  <jsp:include page="/layout/common/footer.jsp"></jsp:include>
-  <!-- footer section -->
-  <jsp:include page="/layout/common/jsConf.jsp"></jsp:include>
-
-
-</body>
-</html>

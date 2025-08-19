@@ -47,7 +47,7 @@
 		<!-- Content -->
 		<main class="flex-grow-1 p-4 bg-light">
 			<!-- 내 정보 수정 -->
-		    <div id="profile-edit" class="content-section">
+		    <div id="profile-edit" class="content-section" style="display: block;">
 		        <jsp:include page="/layout/user/mypage/mypageInfo.jsp"></jsp:include>
 		    </div>
 		
@@ -96,9 +96,11 @@
 		    });
 		
 		    // 기본 탭 활성화 (첫 번째)
+		    /*
 		    if (links.length > 0) {
 		        links[0].click();
 		    }
+		    */
 		});
 		</script>
 

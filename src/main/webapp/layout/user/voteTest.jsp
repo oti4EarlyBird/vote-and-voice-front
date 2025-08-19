@@ -33,7 +33,6 @@
 </head>
 
 
-
 <body>
 	
     <!-- header section strats -->
@@ -44,7 +43,7 @@
     	<!--  <h5 class="card-title">월별 투표 실적</h5> -->
 		<canvas id="myChart"  height="600"> </canvas>
     </div>
-    
+      
     <div class="card p-3">
     	<h3>활동 이력</h3>
     	<table class="table table-striped]">

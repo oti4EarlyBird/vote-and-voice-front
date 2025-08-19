@@ -6,7 +6,7 @@ import javax.servlet.http.*;
 import java.io.IOException;
 import java.util.*;
 
-@WebServlet("/user/actdetail/*")
+@WebServlet("/user/actdetail")
 public class ActDetailServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -14,9 +14,12 @@ public class ActDetailServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
     	//url에서 actnum 추출
-    	String pathInfo = request.getPathInfo();
-    	int actnum = Integer.parseInt(pathInfo.substring(1));
-    	
+    	String requestActnum = request.getParameter("actnum");
+    	int actnum = Integer.parseInt(requestActnum);
+
+    	//String pathInfo = request.getPathInfo();
+    	//int actnum = Integer.parseInt(pathInfo.substring(1));
+  
         // 가짜 의안 데이터
         Map<String, String> bill = new HashMap<>();
         bill.put("num", String.valueOf(1));

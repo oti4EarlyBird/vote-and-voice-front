@@ -9,6 +9,14 @@
   <title>vote&voice</title>
 
   <jsp:include page="/layout/common/cssConf.jsp"></jsp:include>
+  <style type="text/css">
+  	img {
+	  width: 100%;      /* 부모 요소 가로에 꽉 차게 */
+	  height: 100%;     /* 부모 요소 세로에 꽉 차게 */
+	  object-fit: cover; /* 이미지 비율 유지하며 잘림 없이 꽉 채움 */
+	  display: block;    /* inline 특성 제거해서 공간 생기는 문제 방지 */
+	}
+  </style>
 </head>
 
 
@@ -114,11 +122,11 @@
 	      </div>
 	
 	      <ul class="filters_menu">
-	        <li class="active" data-filter="*">All</li>
+	        <li class="active" data-filter="*">전체 보기</li>
 	        <li data-filter=".burger">취업</li>
 	        <li data-filter=".pizza">복지</li>
+	        <li data-filter=".pasta">결혼</li>
 	        <!-- 
-	        <li data-filter=".pasta">Pasta</li>
 	        <li data-filter=".fries">Fries</li>
 	         -->
 	      </ul>
@@ -129,18 +137,18 @@
 	            <div class="box">
 	              <div>
 	                <div class="img-box">
-	                  <img src="images/f1.png" alt="">
+	                  <img src="/vote-and-voice-front/images/image02-1.jpg" alt="">
 	                </div>
 	                <div class="detail-box">
 	                  <h5>
-	                    Delicious Pizza
+	                    청년 월세 지원
 	                  </h5>
 	                  <p>
-	                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+	                    일정 소득 이하 청년에게 월 최대 20만원의 월세를 지원하는 제도
 	                  </p>
 	                  <div class="options">
 	                    <h6>
-	                      $20
+	                      신청기간 : 2025.01.01 ~ 2025.12.31
 	                    </h6>
 	                    <a href="">
 	                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -164,36 +172,7 @@
 	                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
 	                          </g>
 	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
+	                       
 	                      </svg>
 	                    </a>
 	                  </div>
@@ -205,18 +184,18 @@
 	            <div class="box">
 	              <div>
 	                <div class="img-box">
-	                  <img src="images/f2.png" alt="">
+	                  <img src="/vote-and-voice-front/images/image01.jpg" alt="">
 	                </div>
 	                <div class="detail-box">
 	                  <h5>
-	                    Delicious Burger
+	                    청년 도전 지원 사업
 	                  </h5>
 	                  <p>
-	                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+	                    구직 의지가 있는 미취업 청년에게 취업 준비 프로그램 및 수당 지원
 	                  </p>
 	                  <div class="options">
 	                    <h6>
-	                      $15
+	                      신청기간 : 2025.01.01 ~ 2025.12.31
 	                    </h6>
 	                    <a href="">
 	                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -239,36 +218,6 @@
 	                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
 	                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
 	                          </g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
 	                        </g>
 	                      </svg>
 	                    </a>
@@ -281,18 +230,18 @@
 	            <div class="box">
 	              <div>
 	                <div class="img-box">
-	                  <img src="images/f3.png" alt="">
+	                  <img src="/vote-and-voice-front/images/image02-2.jpg" alt="">
 	                </div>
 	                <div class="detail-box">
 	                  <h5>
-	                    Delicious Pizza
+	                    청년 기본 소득
 	                  </h5>
 	                  <p>
-	                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+	                    거주 요건 충족 시 분기별 일정 금액을 현금 또는 지역 화폐로 지급
 	                  </p>
 	                  <div class="options">
 	                    <h6>
-	                      $17
+	                      상시 모집 중
 	                    </h6>
 	                    <a href="">
 	                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -316,36 +265,6 @@
 	                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
 	                          </g>
 	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
 	                      </svg>
 	                    </a>
 	                  </div>
@@ -353,6 +272,7 @@
 	              </div>
 	            </div>
 	          </div>
+	          <!-- 
 	          <div class="col-sm-6 col-lg-4 all pasta">
 	            <div class="box">
 	              <div>
@@ -392,36 +312,7 @@
 	                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
 	                          </g>
 	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
+
 	                      </svg>
 	                    </a>
 	                  </div>
@@ -429,6 +320,7 @@
 	              </div>
 	            </div>
 	          </div>
+
 	          <div class="col-sm-6 col-lg-4 all fries">
 	            <div class="box">
 	              <div>
@@ -467,36 +359,6 @@
 	                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
 	                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
 	                          </g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
 	                        </g>
 	                      </svg>
 	                    </a>
@@ -544,36 +406,6 @@
 	                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
 	                          </g>
 	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
 	                      </svg>
 	                    </a>
 	                  </div>
@@ -581,22 +413,23 @@
 	              </div>
 	            </div>
 	          </div>
+	          -->
 	          <div class="col-sm-6 col-lg-4 all burger">
 	            <div class="box">
 	              <div>
 	                <div class="img-box">
-	                  <img src="images/f7.png" alt="">
+	                  <img src="/vote-and-voice-front/images/image01-2.jpg"alt="">
 	                </div>
 	                <div class="detail-box">
 	                  <h5>
-	                    Tasty Burger
+	                    청년내일채움공제
 	                  </h5>
 	                  <p>
-	                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+	                    중소기업에 2년이상 근무 시 목돈 마련을 지원하는 저축형 공제 제도
 	                  </p>
 	                  <div class="options">
 	                    <h6>
-	                      $12
+	                      신청기간 : ~ 2025.08.31
 	                    </h6>
 	                    <a href="">
 	                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -620,36 +453,6 @@
 	                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
 	                          </g>
 	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
 	                      </svg>
 	                    </a>
 	                  </div>
@@ -661,18 +464,18 @@
 	            <div class="box">
 	              <div>
 	                <div class="img-box">
-	                  <img src="images/f8.png" alt="">
+	                  <img src="/vote-and-voice-front/images/image01-3.jpg" alt="">
 	                </div>
 	                <div class="detail-box">
 	                  <h5>
-	                    Tasty Burger
+	                    K-Digital Training
 	                  </h5>
 	                  <p>
-	                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+	                  	IT, 디지털 분야 취업을 위한 국비 무료 직무 교육 제공
 	                  </p>
 	                  <div class="options">
 	                    <h6>
-	                      $14
+	                      K-대한민국
 	                    </h6>
 	                    <a href="">
 	                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -695,36 +498,6 @@
 	                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
 	                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
 	                          </g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
 	                        </g>
 	                      </svg>
 	                    </a>
@@ -737,18 +510,18 @@
 	            <div class="box">
 	              <div>
 	                <div class="img-box">
-	                  <img src="images/f9.png" alt="">
+	                  <img src="/vote-and-voice-front/images/image03-1.jpg" alt="">
 	                </div>
 	                <div class="detail-box">
 	                  <h5>
-	                    Delicious Pasta
+	                    신혼희망타운 분양
 	                  </h5>
 	                  <p>
-	                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+	                    청년 신혼부부에게 저렴한 가격으로 공공주택 우선 공급
 	                  </p>
 	                  <div class="options">
 	                    <h6>
-	                      $10
+	                      결혼하세요~
 	                    </h6>
 	                    <a href="">
 	                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -771,36 +544,6 @@
 	                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
 	                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
 	                          </g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
-	                        </g>
-	                        <g>
 	                        </g>
 	                      </svg>
 	                    </a>
@@ -834,14 +577,18 @@
 	          <div class="form_container">
 	            <form action="">
 	              <div>
-	                <input type="text" class="form-control" placeholder="Your Name" />
+	                <input type="text" class="form-control" placeholder="이름 또는 별명 입력" />
 	              </div>
 	              <div>
-	                <input type="text" class="form-control" placeholder="Phone Number" />
+	                <input type="email" class="form-control" placeholder="이메일 입력" />
 	              </div>
 	              <div>
-	                <input type="email" class="form-control" placeholder="Your Email" />
+	                <input type="text" class="form-control" placeholder="제목 입력" />
 	              </div>
+	              <div>
+	                <textarea class="form-control" rows="5"  style="height: 120px;" placeholder="내용 입력"></textarea>
+	              </div>	              
+	              <!-- 
 	              <div>
 	                <select class="form-control nice-select wide">
 	                  <option value="" disabled selected>
@@ -864,9 +611,10 @@
 	              <div>
 	                <input type="date" class="form-control">
 	              </div>
+	               -->
 	              <div class="btn_box">
 	                <button>
-	                  Book Now
+	                  제출하기
 	                </button>
 	              </div>
 	            </form>

@@ -9,7 +9,7 @@
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="/vote-and-voice-front/main">
             <span>
               Vote&Voice
             </span>
@@ -43,16 +43,13 @@
           	<!-- 사용자 로그인 -->
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item">
-                <a class="nav-link" href="menu.html">의안</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">공지사항<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">법안발의통계</a>
+                <a class="nav-link" href="/vote-and-voice-front/user/actlist">의안</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="book.html">커뮤니티</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">공지사항<span class="sr-only">(current)</span></a>
               </li>
             </ul>
            <%} %>
@@ -94,7 +91,7 @@
 			%>
             <!-- 로그인 했을 때-->
             <% if(role.equals("사용자")){ %>
-              <a href="" class="user_link">
+              <a href="/vote-and-voice-front/mypage" class="user_link">
                 <i class="fa fa-user" aria-hidden="true"></i>
               </a>
              <%} %>

@@ -37,7 +37,7 @@
        	DB에서 user테이블의 role이 관리자/사용자에 따라서 보여주는 header nav가 다르게 보임 
         --%>
         <% 
-        	String role = "사용자";
+        	String role = (String)session.getAttribute("role");
         %>
         <% if(role.equals("사용자")){ %>
           	<!-- 사용자 로그인 -->
@@ -58,16 +58,16 @@
             <!-- 관리자 로그인 -->
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item">
-                <a class="nav-link" href="menu.html">회원조회</a>
+                <a class="nav-link" href="/vote-and-voice-front/admin/adminUsers.jsp">회원조회</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">의안관리<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/vote-and-voice-front/admin/adminBills.jsp">의안관리<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">신고관리</a>
+                <a class="nav-link" href="/vote-and-voice-front/admin/adminCommentsDeleteBan.jsp">신고관리</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="book.html">공지사항관리</a>
+                <a class="nav-link" href="/vote-and-voice-front/admin/adminPopup.jsp">공지사항관리</a>
               </li>
             </ul>
           <%} %>
@@ -77,13 +77,13 @@
             
             <div class="user_option">
             <%
-            	String loginCheck = "123445";
-           		
+            	String loginCheck = (String)session.getAttribute("userid");
+           		System.out.println("서버 콘솔 출력 - userid: " + loginCheck);
             	if(loginCheck == null) {
             		
            	%>
             <!-- 로그인 안했을 때 -->
-              <a href="" class="order_online">
+              <a href="/vote-and-voice-front/user/login" class="order_online">
               	로그인
               </a>		
 			<%

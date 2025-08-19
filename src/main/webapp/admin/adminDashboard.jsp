@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-
 <head>
 <meta charset="UTF-8">
 <title>관리자 대시보드</title>
@@ -13,7 +12,8 @@
 <!-- CHARTJS -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <link rel="stylesheet" type="text/css" href="/vote-and-voice-front/admin/adminDashboard.css">
-<%@ include file="/layout/common/header.jsp" %>
+
+<%@ include file="/layout/common/header.jsp" %> 
 <%@ include file="/layout/common/cssConf.jsp" %>
 </head>
 <body>

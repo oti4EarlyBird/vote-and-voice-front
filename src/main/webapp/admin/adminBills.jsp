@@ -33,12 +33,11 @@
 	<h2 style="font-family: sans-serif; margin-right: 60vw;
 	">
 		의안 목록
-		<a href=""
+		<button
 		class="btn btn-write btn-primary disabled"
-		role="button"
-    	>
+		onclick="location.href='/vote-and-voice-front/admin/adminBillsWriteFrom.jsp'">
    			등록
-   		</a>
+   		</button>
 	</h2>
 	
 </div>

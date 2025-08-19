@@ -29,13 +29,13 @@ public class LoginServlet extends HttpServlet {
 
         String userid = request.getParameter("userid");
         String password = request.getParameter("password");
-
+        System.out.println(userid);
         if (userid != null && password != null &&
             users.containsKey(userid) && users.get(userid).equals(password)) {
-
+        	
             HttpSession session = request.getSession();
             session.setAttribute("userid", userid);
-            response.sendRedirect(request.getContextPath() + "/main.jsp");
+            response.sendRedirect(request.getContextPath() + "/main");
 
         } else {
             // 로그인 실패 → 에러 메시지 전달

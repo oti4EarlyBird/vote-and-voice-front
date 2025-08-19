@@ -18,6 +18,10 @@ public class MainServlet extends HttpServlet {
 		// main.jsp 파일의 경로를 지정합니다.
         // 프로젝트 구조 상 main.jsp는 /webapp/main.jsp에 위치합니다.
         String path = "/layout/user/index.jsp"; 
+        
+        String role = "사용자";
+        request.getSession().setAttribute("role", role);
+        
         // RequestDispatcher 객체를 사용하여 요청을 JSP로 전달합니다.
         RequestDispatcher dispatcher = request.getRequestDispatcher(path);
         

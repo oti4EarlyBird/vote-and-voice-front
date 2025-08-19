@@ -6,10 +6,11 @@
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
-  <title> Feane </title>
+  <title>vote&voice</title>
 
   <jsp:include page="/layout/common/cssConf.jsp"></jsp:include>
 </head>
+
 
 <body>
 
@@ -19,27 +20,26 @@
     
     
     
-  <!-- 컨텐츠 부분 -->  
-  <div class="hero_area" style="background-color: pink;">
-  
+
   <!-- slider section -->
-    <section class="slider_section ">
+    <section class="slider_section mb-4" style="background-color: #191970; ">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" style="background-image: url('/vote-and-voice-front/images/carousel_welcomWebSite.png');background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="container ">
               <div class="row">
                 <div class="col-md-7 col-lg-6 ">
                   <div class="detail-box">
                     <h1>
-                      Fast Food Restaurant
+                      GRAND OPEN!
                     </h1>
                     <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                     Vote & Voice 홈페이지가 새롭게 오픈했습니다!<br>
+                     대한민국의 정책과아 의안에 대한 여러분의 의견을 자유롭게 나누세요~
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
-                        Order Now
+                        확인하기
                       </a>
                     </div>
                   </div>
@@ -102,23 +102,25 @@
     </section>
     <!-- end slider section -->
   
-  	  
+  	   
 	  <!-- start : 최신 의안 카드형식으로 보여줄 부분 -->
 	
 	  <section class="food_section layout_padding-bottom">
 	    <div class="container">
 	      <div class="heading_container heading_center">
 	        <h2>
-	          Our Menu
+				Category
 	        </h2>
 	      </div>
 	
 	      <ul class="filters_menu">
 	        <li class="active" data-filter="*">All</li>
-	        <li data-filter=".burger">Burger</li>
-	        <li data-filter=".pizza">Pizza</li>
+	        <li data-filter=".burger">취업</li>
+	        <li data-filter=".pizza">복지</li>
+	        <!-- 
 	        <li data-filter=".pasta">Pasta</li>
 	        <li data-filter=".fries">Fries</li>
+	         -->
 	      </ul>
 	
 	      <div class="filters-content">
@@ -881,7 +883,6 @@
 	  <!-- start : 관리자에게 하고 싶은 말 (QA&A) -->
   
   
-  </div>
 
  
  
@@ -892,9 +893,7 @@
   <jsp:include page="/layout/common/footer.jsp"></jsp:include>
   <!-- footer section -->
 
-	
-	
-	
+
   <jsp:include page="/layout/common/jsConf.jsp"></jsp:include>
 </body>
 

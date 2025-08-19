@@ -17,7 +17,7 @@ public class MainServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// main.jsp 파일의 경로를 지정합니다.
         // 프로젝트 구조 상 main.jsp는 /webapp/main.jsp에 위치합니다.
-        String path = "/main.jsp";
+        String path = "/layout/user/index.jsp";
         System.out.println("테스트");        
         // RequestDispatcher 객체를 사용하여 요청을 JSP로 전달합니다.
         RequestDispatcher dispatcher = request.getRequestDispatcher(path);
@@ -25,6 +25,5 @@ public class MainServlet extends HttpServlet {
         // 포워딩을 수행하여 클라이언트의 요청과 응답 객체를 JSP로 넘겨줍니다.
         dispatcher.forward(request, response);
         
-        System.out.println("으아아아아ㅇㅇㅇㅇㅇㅇㅇㅇ아");
     }
 }
